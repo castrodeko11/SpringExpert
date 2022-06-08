@@ -1,6 +1,8 @@
 package br.com.aco.domain.entity;
 
 import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 public class Cliente {
@@ -9,6 +11,9 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String nome;
+
+    @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
+    private List<Pedido> pedidos;
 
     public Cliente() {
     }
@@ -38,6 +43,13 @@ public class Cliente {
         this.nome = nome;
     }
 
+    public List<Pedido> getPedidos() {
+        return pedidos;
+    }
+
+    public void setPedidos(List<Pedido> pedidos) {
+        this.pedidos = pedidos;
+    }
 
     @Override
     public String toString() {

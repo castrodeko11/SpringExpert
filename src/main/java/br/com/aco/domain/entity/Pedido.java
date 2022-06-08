@@ -1,14 +1,30 @@
 package br.com.aco.domain.entity;
 
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
+@Entity
+@Table (name = "pedido")
 public class Pedido {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private Cliente clliente;
-    private LocalDate data;
+
+    @ManyToOne
+    @JoinColumn(name="cliente_id")
+    private Cliente cliente;
+
+    @Column(name = "data_pedido")
+    private LocalDate dataPedido;
+
+    @Column(name = "total", scale = 2,precision = 20)
     private BigDecimal total;
+
+    @OneToMany(mappedBy = "pedido")
+    private List<ItemPedido> itens;
 
     public Integer getId() {
         return id;
@@ -18,20 +34,20 @@ public class Pedido {
         this.id = id;
     }
 
-    public Cliente getClliente() {
-        return clliente;
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public void setClliente(Cliente clliente) {
-        this.clliente = clliente;
+    public void setCliente(Cliente clliente) {
+        this.cliente = clliente;
     }
 
-    public LocalDate getData() {
-        return data;
+    public LocalDate getDataPedido() {
+        return dataPedido;
     }
 
-    public void setData(LocalDate data) {
-        this.data = data;
+    public void setDataPedido(LocalDate data) {
+        this.dataPedido = data;
     }
 
     public BigDecimal getTotal() {
@@ -40,5 +56,22 @@ public class Pedido {
 
     public void setTotal(BigDecimal total) {
         this.total = total;
+    }
+
+    public List<ItemPedido> getItens() {
+        return itens;
+    }
+
+    public void setItens(List<ItemPedido> itens) {
+        this.itens = itens;
+    }
+
+    @Override
+    public String toString() {
+        return "Pedido{" +
+                "id=" + id +
+                ", dataPedido=" + dataPedido +
+                ", total=" + total +
+                '}';
     }
 }
