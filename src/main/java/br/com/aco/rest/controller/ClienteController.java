@@ -1,4 +1,4 @@
-package br.com.aco.controller;
+package br.com.aco.rest.controller;
 
 import br.com.aco.domain.entity.Cliente;
 import br.com.aco.domain.repository.Clientes;
