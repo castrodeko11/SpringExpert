@@ -1,5 +1,6 @@
 package br.com.aco.domain.entity;
 
+import br.com.aco.domain.enums.StatusPedido;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -29,6 +30,9 @@ public class Pedido {
 
     @Column(name = "total", scale = 2,precision = 20)
     private BigDecimal total;
+
+    @Enumerated(EnumType.STRING)
+    private StatusPedido status;
 
     @OneToMany(mappedBy = "pedido")
     private List<ItemPedido> itens;

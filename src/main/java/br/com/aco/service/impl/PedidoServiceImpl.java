@@ -4,6 +4,7 @@ import br.com.aco.domain.entity.Cliente;
 import br.com.aco.domain.entity.ItemPedido;
 import br.com.aco.domain.entity.Pedido;
 import br.com.aco.domain.entity.Produto;
+import br.com.aco.domain.enums.StatusPedido;
 import br.com.aco.domain.repository.Clientes;
 import br.com.aco.domain.repository.ItensPedido;
 import br.com.aco.domain.repository.Pedidos;
@@ -13,12 +14,12 @@ import br.com.aco.rest.dto.ItemPedidoDTO;
 import br.com.aco.rest.dto.PedidoDTO;
 import br.com.aco.service.PedidoService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -43,6 +44,7 @@ public class PedidoServiceImpl implements PedidoService {
         pedido.setTotal(pedidoDTO.getTotal());
         pedido.setDataPedido(LocalDate.now());
         pedido.setCliente(cliente);
+        pedido.setStatus(StatusPedido.REALIZADO);
 
         List<ItemPedido> itemsPedidos = converterItems(pedido, pedidoDTO.getItens());
         pedidos.save(pedido);
@@ -50,6 +52,11 @@ public class PedidoServiceImpl implements PedidoService {
         pedido.setItens(itemsPedidos);
 
         return pedido;
+    }
+
+    @Override
+    public Optional<Pedido> obterPedidoCompleto(Integer id) {
+        return pedidos.findByIdFetchItens(id);
     }
 
     private List<ItemPedido> converterItems(Pedido pedido, List<ItemPedidoDTO> itemPedidoDTOList) {
@@ -67,7 +74,7 @@ public class PedidoServiceImpl implements PedidoService {
                             ));
 
                     ItemPedido itemPedido = new ItemPedido();
-                    itemPedido.setQuantidade(itemPedido.getQuantidade());
+                    itemPedido.setQuantidade(itemPedidoDTO.getQuantidade());
                     itemPedido.setPedido(pedido);
                     itemPedido.setProduto(produto);
 
