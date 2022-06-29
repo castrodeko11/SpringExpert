@@ -9,6 +9,7 @@ import br.com.aco.domain.repository.Clientes;
 import br.com.aco.domain.repository.ItensPedido;
 import br.com.aco.domain.repository.Pedidos;
 import br.com.aco.domain.repository.Produtos;
+import br.com.aco.exception.PedidoNaoEncontradoException;
 import br.com.aco.exception.RegraNegocioException;
 import br.com.aco.rest.dto.ItemPedidoDTO;
 import br.com.aco.rest.dto.PedidoDTO;
@@ -57,6 +58,17 @@ public class PedidoServiceImpl implements PedidoService {
     @Override
     public Optional<Pedido> obterPedidoCompleto(Integer id) {
         return pedidos.findByIdFetchItens(id);
+    }
+
+    @Override
+    @Transactional
+    public void atualizaStatus(Integer id, StatusPedido statusPedido) {
+        pedidos
+                .findById(id)
+                .map( pedido -> {
+                    pedido.setStatus(statusPedido);
+                    return pedidos.save(pedido);
+                }).orElseThrow(() -> new PedidoNaoEncontradoException());
     }
 
     private List<ItemPedido> converterItems(Pedido pedido, List<ItemPedidoDTO> itemPedidoDTOList) {
