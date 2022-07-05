@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70009c46-2369-4a73-896c-485791d33ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/aco/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Vendas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Vendas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/aco/service/impl/UsuarioServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aco/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/aco/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +155,10 @@
       <workItem from="1656329323094" duration="87000" />
       <workItem from="1656415293248" duration="15000" />
       <workItem from="1656453308305" duration="5960000" />
-      <workItem from="1656546155561" duration="2489000" />
+      <workItem from="1656546155561" duration="2706000" />
+      <workItem from="1656781324517" duration="599000" />
+      <workItem from="1656979515397" duration="2216000" />
+      <workItem from="1656982103185" duration="320000" />
     </task>
     <servers />
   </component>
