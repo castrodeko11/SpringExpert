@@ -5,17 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70009c46-2369-4a73-896c-485791d33ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/aco/domain/entity/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/aco/domain/repository/UsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/aco/rest/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aco/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/aco/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aco/service/impl/UsuarioServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/aco/service/impl/UsuarioServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/aco/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/VendasApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/config/InternacionalizacaoConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/entity/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/entity/ItemPedido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/entity/Pedido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/entity/Produto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/entity/Usuario$UsuarioBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/entity/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/enums/StatusPedido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/repository/Clientes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/repository/ItensPedido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/repository/Pedidos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/repository/Produtos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/domain/repository/UsuarioRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/exception/PedidoNaoEncontradoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/exception/RegraNegocioException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/ApiErros.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/controller/ApplicationControllerAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/controller/ClienteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/controller/PedidoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/controller/ProdutoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/controller/UsuarioController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/dto/AtualizacaoStatusPedidoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/dto/InformacoesItemPedidoDTO$InformacoesItemPedidoDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/dto/InformacoesItemPedidoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/dto/InformacoesPedidosDTO$InformacoesPedidosDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/dto/InformacoesPedidosDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/dto/ItemPedidoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/rest/dto/PedidoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/service/PedidoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/service/impl/PedidoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/service/impl/UsuarioServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/validation/NotEmptyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aco/validation/constraintvalidation/NotEmptyListValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my_schema.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +200,7 @@
       <workItem from="1657885988170" duration="119000" />
       <workItem from="1658108682536" duration="1252000" />
       <workItem from="1658142341688" duration="611000" />
-      <workItem from="1658188467251" duration="2453000" />
+      <workItem from="1658188467251" duration="2863000" />
     </task>
     <servers />
   </component>
