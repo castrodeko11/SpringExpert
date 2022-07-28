@@ -2,6 +2,7 @@ package br.com.aco.service.impl;
 
 import br.com.aco.domain.entity.Usuario;
 import br.com.aco.domain.repository.UsuarioRepository;
+import br.com.aco.exception.SenhaInvalidaException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -24,6 +25,18 @@ public class UsuarioServiceImp implements UserDetailsService {
     @Transactional
     public Usuario salvar(Usuario usuario){
         return usuarioRepository.save(usuario);
+    }
+
+    public UserDetails autenticar(Usuario usuario){
+        UserDetails user = loadUserByUsername(usuario.getLogin());
+        boolean senhasBatem = passwordEncoder.matches(usuario.getSenha(), user.getPassword());
+
+        if(senhasBatem){
+            return user;
+        }
+
+        throw new SenhaInvalidaException();
+
     }
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
