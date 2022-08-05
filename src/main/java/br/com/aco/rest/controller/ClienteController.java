@@ -2,6 +2,7 @@ package br.com.aco.rest.controller;
 
 import br.com.aco.domain.entity.Cliente;
 import br.com.aco.domain.repository.Clientes;
+import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
@@ -16,13 +17,20 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/clientes")
+@Api("API Clientes")
 public class ClienteController {
 
     @Autowired
     private Clientes clientes;
 
     @GetMapping("/{id}")
-    public Cliente getClienteById(@PathVariable Integer id) {
+    @ApiOperation("Obter detalhes de um cliente")
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "Cliente encontrado"),
+            @ApiResponse(code = 404, message = "Cliente não encontrado para o ID informado")
+    })
+    public Cliente getClienteById(@PathVariable
+                                  @ApiParam("ID do cliente") Integer id) {
         return clientes
                 .findById(id)
                 .orElseThrow(() ->
@@ -32,6 +40,11 @@ public class ClienteController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
+    @ApiOperation("Salvar um novo Cliente")
+    @ApiResponses({
+            @ApiResponse(code = 201, message = "Cliente salvo com sucesso"),
+            @ApiResponse(code = 400, message = "Erro de validação")
+    })
     public Cliente save(@RequestBody @Valid Cliente cliente) {
         return clientes.save(cliente);
     }
@@ -53,7 +66,7 @@ public class ClienteController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void update(
             @PathVariable Integer id,
-            @RequestBody @Valid  Cliente cliente) {
+            @RequestBody @Valid Cliente cliente) {
 
         clientes
                 .findById(id)

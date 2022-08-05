@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70009c46-2369-4a73-896c-485791d33ebb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aco/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/aco/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aco/rest/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/aco/rest/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="28znP1PWGwh5oXqz66GPSEHSgbx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_directory_selection": "D:/Projetos/SpringBoot/Vendas/src/main/java/br/com/aco",
+    "last_opened_file_path": "D:/Projetos/SpringBoot/Vendas",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "385d3cdb883bdeba854341141b694a56"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.aco.exception" />
+      <recent name="br.com.aco.domain.entity" />
+      <recent name="br.com.aco.rest.dto" />
+      <recent name="br.com.aco" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projetos\SpringBoot\Vendas\src\main\resources" />
+      <recent name="D:\Projetos\SpringBoot\Vends\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.aco" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendasApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="test" />
+      <module name="Vendas" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.aco.VendasApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70009c46-2369-4a73-896c-485791d33ebb" name="Changes" comment="" />
+      <created>1652228255554</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652228255554</updated>
+      <workItem from="1652228256755" duration="2081000" />
+      <workItem from="1652313653383" duration="3233000" />
+      <workItem from="1652316993971" duration="27000" />
+      <workItem from="1652399205321" duration="42000" />
+      <workItem from="1652484983880" duration="2666000" />
+      <workItem from="1652489566200" duration="924000" />
+      <workItem from="1652700215182" duration="1578000" />
+      <workItem from="1652741583709" duration="923000" />
+      <workItem from="1652829073915" duration="55000" />
+      <workItem from="1652829139307" duration="3944000" />
+      <workItem from="1652912541761" duration="31000" />
+      <workItem from="1653438049643" duration="2601000" />
+      <workItem from="1653705141199" duration="37000" />
+      <workItem from="1654040989709" duration="3392000" />
+      <workItem from="1654127636997" duration="11000" />
+      <workItem from="1654645760383" duration="6329000" />
+      <workItem from="1655255281244" duration="928000" />
+      <workItem from="1655256645671" duration="259000" />
+      <workItem from="1655520680359" duration="599000" />
+      <workItem from="1655574791034" duration="3239000" />
+      <workItem from="1655588501705" duration="6105000" />
+      <workItem from="1655682279157" duration="4502000" />
+      <workItem from="1655766571861" duration="78000" />
+      <workItem from="1655859820354" duration="1415000" />
+      <workItem from="1655861331725" duration="220000" />
+      <workItem from="1655861565520" duration="2211000" />
+      <workItem from="1655863815278" duration="467000" />
+      <workItem from="1655949976479" duration="15000" />
+      <workItem from="1656036005798" duration="1814000" />
+      <workItem from="1656288178570" duration="57000" />
+      <workItem from="1656288290658" duration="6964000" />
+      <workItem from="1656329323094" duration="87000" />
+      <workItem from="1656415293248" duration="15000" />
+      <workItem from="1656453308305" duration="5960000" />
+      <workItem from="1656546155561" duration="2706000" />
+      <workItem from="1656781324517" duration="599000" />
+      <workItem from="1656979515397" duration="2216000" />
+      <workItem from="1656982103185" duration="840000" />
+      <workItem from="1656983480828" duration="667000" />
+      <workItem from="1657243080728" duration="35000" />
+      <workItem from="1657243130898" duration="151000" />
+      <workItem from="1657885988170" duration="119000" />
+      <workItem from="1658108682536" duration="1252000" />
+      <workItem from="1658142341688" duration="611000" />
+      <workItem from="1658188467251" duration="3033000" />
+      <workItem from="1658193207095" duration="9000" />
+      <workItem from="1658315931064" duration="76000" />
+      <workItem from="1658452666286" duration="25000" />
+      <workItem from="1658452737107" duration="1470000" />
+      <workItem from="1658533170515" duration="1328000" />
+      <workItem from="1658793671125" duration="4939000" />
+      <workItem from="1658968446049" duration="1923000" />
+      <workItem from="1658970534187" duration="788000" />
+      <workItem from="1659483256150" duration="2859000" />
+      <workItem from="1659567832581" duration="2063000" />
+      <workItem from="1659577886400" duration="973000" />
+      <workItem from="1659659373454" duration="118000" />
+      <workItem from="1659659499097" duration="73000" />
+      <workItem from="1659659583888" duration="1252000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/aco/rest/controller/PedidoController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/aco/rest/controller/PedidoController.java</url>
+          <line>44</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/aco/rest/controller/PedidoController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/aco/rest/controller/PedidoController.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/aco/rest/controller/PedidoController.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/aco/service/impl/PedidoServiceImpl.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/aco/service/impl/PedidoServiceImpl.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/aco/service/impl/PedidoServiceImpl.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/aco/rest/controller/ClienteController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="br.com.aco.domain.entity.Pedido" memberName="itens" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
